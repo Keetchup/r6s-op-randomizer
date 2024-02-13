@@ -31,12 +31,12 @@ const OperatorIcon: React.FC<OperatorIconProps> = ({ operator, handleClick }) =>
                     slotProps={{
                         popper: {
                             modifiers: [{
-                              name: 'offset',
-                              options: {
-                                offset: [0, -14],
-                              },
-                            }],
-                        },
+                                name: 'offset',
+                                options: {
+                                    offset: [0, -14]
+                                }
+                            }]
+                        }
                     }}
                     arrow
                 >
