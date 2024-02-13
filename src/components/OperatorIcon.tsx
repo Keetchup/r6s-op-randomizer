@@ -26,7 +26,7 @@ const OperatorIcon: React.FC<OperatorIconProps> = ({ operator, handleClick }) =>
                     : <></>
                 }
             >
-                <Tooltip title={operator.name.toUpperCase()} followCursor>
+                <Tooltip title={operator.name.toUpperCase()} arrow>
                     <Avatar
                         variant="square"
                         src={operator.icon}
