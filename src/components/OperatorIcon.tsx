@@ -26,7 +26,20 @@ const OperatorIcon: React.FC<OperatorIconProps> = ({ operator, handleClick }) =>
                     : <></>
                 }
             >
-                <Tooltip title={operator.name.toUpperCase()} arrow>
+                <Tooltip
+                    title={operator.name.toUpperCase()}
+                    slotProps={{
+                        popper: {
+                            modifiers: [{
+                              name: 'offset',
+                              options: {
+                                offset: [0, -14],
+                              },
+                            }],
+                        },
+                    }}
+                    arrow
+                >
                     <Avatar
                         variant="square"
                         src={operator.icon}
