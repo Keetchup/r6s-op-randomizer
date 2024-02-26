@@ -30,8 +30,8 @@ request = requests.get(URL)
 bsoup = BeautifulSoup(request.content, 'html5lib')
 
 pathname = os.path.dirname(sys.argv[0])
-ATTACKER_NAMES = readOperatorNames(os.path.join(pathname, 'attackers.json'))
-DEFENDER_NAMES = readOperatorNames(os.path.join(pathname, 'defenders.json'))
+ATTACKER_NAMES = readOperatorNames(os.path.join(pathname, 'operators', 'attackers.json'))
+DEFENDER_NAMES = readOperatorNames(os.path.join(pathname, 'operators', 'defenders.json'))
 
 operators = {}
 operators_all = []
