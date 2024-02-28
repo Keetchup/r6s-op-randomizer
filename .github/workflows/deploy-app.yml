@@ -24,7 +24,7 @@ jobs:
 
     - name: Generate operator links
       run: |
-        python scripts/fetch_operators.py .
+        python scripts/fetch_operators.py src/assets
         git config user.name github-actions
         git config user.email github-actions@github.com
         git add .
