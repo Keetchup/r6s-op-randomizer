@@ -21,7 +21,7 @@ def readOperatorCard(op_card):
 
 def filterOutOpGroup(group):
     return list(map(lambda name:
-        next(filter(lambda op: str.lower(name) == str.lower(op['name']), operators_all))
+        next(filter(lambda op: name == op['name'], operators_all))
     , group))
 
 
