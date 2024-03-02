@@ -16,7 +16,7 @@ const OperatorCard: React.FC = () => {
                         borderColor: '#546e7a',
                         borderRadius: 2,
                         backgroundColor: '#cfd8dc',
-                        maxHeight: 420
+                        maxHeight: 650
                     }}
                 >
                     <Box
